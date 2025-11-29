@@ -1,0 +1,17 @@
+import tkinter as tk
+
+def get_input():
+    user_text = entry.get()
+    print("User entered:", user_text)
+    # You can use user_text in your code here
+
+root = tk.Tk()
+root.title("Input Example")
+
+entry = tk.Entry(root)
+entry.pack()
+
+button = tk.Button(root, text="Get Input", command=get_input)
+button.pack()
+
+root.mainloop()
